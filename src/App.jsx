@@ -665,9 +665,8 @@ export default function App() {
       <div className="app-shell" style={{ maxWidth: 880, margin: "0 auto", padding: "20px clamp(12px, 4vw, 28px) 80px", boxSizing: "border-box" }}>
 
         <div style={{ marginBottom: 24 }}>
-          <Pill color={C.accent}>8-Week Transformation · v3</Pill>
           <h1 style={{ fontSize: "clamp(28px, 4vw, 42px)", fontWeight: 900, letterSpacing: 0, margin: "10px 0 6px", lineHeight: 1.08 }}>
-            Your Complete<br />
+            Bishal<br />
             <span style={{
               background: `linear-gradient(90deg, ${C.accent}, ${C.cyan})`,
               WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent",
