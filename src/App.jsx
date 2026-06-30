@@ -142,7 +142,7 @@ const WEEK = [
       "Swam Saturday? → total rest, no swimming today.",
       "Skipped Saturday swim? → swim today, then rest.",
       "Non-veg day. Two full cooked meals (lunch + dinner). No breakfast needed.",
-      "Use the afternoon to meal-prep the week: marinate chicken, boil eggs, do groceries.",
+      "Use the afternoon to meal-prep the week: marinate chicken, check egg stock, do groceries.",
     ],
     breakfast: null, snack: null, dinner: "dinner_sun",
   },
@@ -168,7 +168,7 @@ const BREAKFASTS = {
         "Cook until just set but still moist (about 2–3 minutes total) — don't overcook or they turn rubbery and dry.",
         "Eat the whey-mixed oats and the eggs together. This is your biggest meal of the day — don't rush it.",
       ],
-      tip: "Whey + 2 eggs replaces the old 3 whole + 2 whites combo and actually nets you more total protein (50g vs 42g) for similar or lower effort. Make oats every single night before bed — takes 3 minutes and means zero decision-making in the morning.",
+      tip: "Whey + 2 eggs keeps this meal high-protein with less effort. Make oats every single night before bed — takes 3 minutes and means zero decision-making in the morning.",
     },
   ],
   bfast_sat: [
@@ -350,7 +350,7 @@ const DINNERS = {
       "Let it cook undisturbed for 2–3 minutes until the edges set and the bottom is golden, then fold it in half using a spatula and cook another minute on each folded side.",
       "Plate the hot rice and serve the masala omelette on top or alongside it. Finish with lemon, cucumber, or any leftover sautéed vegetables if you have them.",
     ],
-    tip: "This keeps Friday simple and filling without the oat pancake step. If you already have cooked rice in the fridge, the whole meal comes together in about 10 minutes.",
+    tip: "This keeps Friday simple, filling, and easy to repeat. If you already have cooked rice in the fridge, the whole meal comes together in about 10 minutes.",
   },
   dinner_sat: {
     name: "Full Veg Dinner — Soya Curry + Sabzi + Rice", cal: 700, protein: 32, emoji: "🥦", tag: "Veg Day", tagColor: C.teal, isVeg: true,
@@ -407,34 +407,34 @@ const DINNERS = {
 const NIGHT_PREP = {
   Sun: { title: "Sunday Night → Prepping for Monday", tasks: [
     { icon: "🥣", task: "Overnight oats", detail: "80g oats + 1 tbsp chia + 1 tbsp mix seeds + 240ml water in a jar. Refrigerate." },
-    { icon: "🥚", task: "Boil 6 eggs", detail: "Batch boil. Refrigerate. Use 5 in tomorrow's post-gym lunch (3 whole + 2 whites)." },
+    { icon: "🥚", task: "Eggs for Monday", detail: "Tomorrow needs 2 whole eggs for post-gym lunch. Keep 2 eggs in stock; no boiling needed tonight." },
     { icon: "🍗", task: "Marinate chicken (Mon + Tue)", detail: "Marinate 400g chicken breast tonight — air fry Monday's portion tomorrow, fridge the rest." },
     { icon: "🧄", task: "Prep veggies", detail: "Wash and chop the week's veggies. Store in airtight container." },
   ]},
   Mon: { title: "Monday Night → Prepping for Tuesday", tasks: [
     { icon: "🥣", task: "Overnight oats", detail: "80g oats + 1 tbsp chia + 1 tbsp mix seeds + 240ml water. Refrigerate." },
-    { icon: "🥚", task: "Check egg stock", detail: "If fewer than 4 eggs left, boil a fresh batch of 6." },
+    { icon: "🥚", task: "Eggs for Tuesday", detail: "Tomorrow needs 2 whole eggs for lunch and 3 whole eggs + 2 whites for dinner. Keep 7 eggs in stock; no boiling needed." },
     { icon: "🍗", task: "Tuesday chicken sorted", detail: "Already marinated from Sunday — just store properly." },
     { icon: "🫙", task: "Soak soya chunks", detail: "Soak 50g soya for Tuesday's snack. Squeeze dry, refrigerate." },
   ]},
   Tue: { title: "Tuesday Night → Prepping for Wednesday", tasks: [
     { icon: "🥣", task: "Overnight oats", detail: "80g oats + 1 tbsp chia + 1 tbsp mix seeds + 240ml water. Refrigerate." },
-    { icon: "🥚", task: "Boil eggs if needed", detail: "Check stock. Boil 6 if running low." },
+    { icon: "🥚", task: "Eggs for Wednesday", detail: "Tomorrow needs 2 whole eggs for lunch and 3 boiled eggs for snack. Keep 5 eggs ready; boil the 3 snack eggs tonight if you want zero prep tomorrow." },
     { icon: "🍚", task: "Cook extra rice", detail: "Cook 150g dry rice tonight — eat 75g, save 75g cold for Thursday's egg fried rice." },
     { icon: "🫙", task: "Pre-cook soya curry base", detail: "Optionally make the onion-tomato gravy base now — saves 10 min tomorrow." },
   ]},
   Wed: { title: "Wednesday Night → Prepping for Thursday (Swim Day)", tasks: [
     { icon: "🥣", task: "Overnight oats", detail: "80g oats + 1 tbsp chia + 1 tbsp mix seeds + 240ml water. Refrigerate." },
-    { icon: "🥚", task: "Boil eggs", detail: "5 needed for post-gym lunch (3 whole + 2 whites). Boil a batch of 6." },
+    { icon: "🥚", task: "Eggs for Thursday", detail: "Tomorrow needs 2 whole eggs for lunch and 1 egg white for dinner coating. Keep 3 eggs in stock; save the extra yolk or use it elsewhere." },
     { icon: "🍌", task: "Keep banana ready", detail: "Keep 1 banana on the counter for between swim and gym." },
     { icon: "🏊", task: "Pack swim bag", detail: "Towel, goggles, extra clothes. Pack tonight — mornings get tight." },
     { icon: "🍗", task: "Marinate chicken strips", detail: "Marinate 200g chicken strips for Thursday's air fryer dinner." },
   ]},
   Thu: { title: "Thursday Night → Prepping for Friday", tasks: [
     { icon: "🥣", task: "Overnight oats", detail: "80g oats + 1 tbsp chia + 1 tbsp mix seeds + 240ml water. Refrigerate." },
-    { icon: "🥚", task: "Check eggs", detail: "Need 4+2 whites for lunch. Boil if stock is low." },
+    { icon: "🥚", task: "Eggs for Friday", detail: "Tomorrow needs 2 whole eggs for lunch and 4 whole eggs + 2 whites for dinner. Keep 8 eggs in stock; buy more tonight if you're short." },
     { icon: "🫙", task: "Soya for snack", detail: "Soak 50g soya for Friday's snack. Squeeze and refrigerate." },
-    { icon: "🍳", task: "Blend oats for dinner", detail: "Blend 40g oats to powder tonight — needed for Friday's omelette pancake." },
+    { icon: "🍚", task: "Rice for dinner", detail: "Cook extra rice tonight if you want Friday dinner faster — omelette + rice is the plan." },
   ]},
   Fri: { title: "Friday Night → Prepping for Saturday (Veg + Cycling Day)", tasks: [
     { icon: "🥣", task: "Overnight oats", detail: "80g oats + 1 tbsp chia + 1 tbsp mix seeds + 240ml water — same recipe, veg friendly." },
@@ -446,7 +446,7 @@ const NIGHT_PREP = {
   Sat: { title: "Saturday Night → Prepping for Sunday (Shopping + Rest Day)", tasks: [
     { icon: "🍗", task: "Marinate Sunday's chicken", detail: "Curd + ginger-garlic + spices + lemon, minimum 8 hours = incredible flavour by dinner." },
     { icon: "🛒", task: "Shopping list ready", detail: "Sunday is grocery day — write down what's low: chicken, eggs, oats, soya, fruits, veggies." },
-    { icon: "🥚", task: "Plan to boil eggs Sunday", detail: "Sunday batch-boil 10–12 eggs for the week ahead — good for 5–6 days." },
+    { icon: "🥚", task: "No eggs needed Sunday", detail: "Tomorrow's lunch and dinner do not use eggs. Check stock only so Monday's 2 lunch eggs are covered." },
     { icon: "📝", task: "No oats prep tonight", detail: "Sunday has no breakfast — skip tonight's oat jar. Resume Sunday night for Monday." },
   ]},
 };
@@ -899,7 +899,7 @@ export default function App() {
               [C.cyan, "💧", "Water", "3–4 litres daily. One full glass before every meal."],
               [C.purple, "😴", "Sleep", "1–2 AM bedtime. Protect 7 hrs. Sleep = muscle repair + fat regulation."],
               [C.accent, "📈", "Progressive Overload", "Add 2.5kg or 1 rep every 1–2 weeks. Log every session."],
-              [C.amber, "🍱", "Meal Prep", "Sunday = marinate chicken, boil eggs, prep veggies. 90 min saves the week."],
+              [C.amber, "🍱", "Meal Prep", "Sunday = marinate chicken, check egg stock, prep veggies. 90 min saves the week."],
               [C.orange, "📸", "Track Progress", "Weekly photo, same lighting, same time. Scale lies. Photos don't."],
             ].map(([color, icon, title, desc]) => (
               <div key={title} className="responsive-card" style={{
@@ -1103,7 +1103,7 @@ export default function App() {
               {[
                 ["Chicken breast", "700–800g", "~₹350–400"],
                 ["Chicken leg/thigh (Sunday)", "300g", "~₹80"],
-                ["Eggs", "20–22", "~₹170"],
+                ["Eggs", "24–26", "~₹200"],
                 ["Rolled oats", "600g", "~₹80"],
                 ["Soya chunks", "250g dry", "~₹30"],
                 ["Chia seeds", "100g", "~₹60"],
@@ -1138,7 +1138,7 @@ export default function App() {
                 ["Tue", false, "Oats + eggs", "Egg Fried Rice"],
                 ["Wed", false, "Oats + eggs", "Soya Masala Curry + Rice"],
                 ["Thu", false, "Oats + eggs", "Air Fryer Chicken Strips"],
-                ["Fri", false, "Oats + eggs", "Masala Omelette + Oat Pancake"],
+                ["Fri", false, "Oats + eggs", "Masala Omelette + Rice"],
                 ["Sat", true, "Oats + sprouts (veg)", "Full Veg Soya Curry + Rice"],
                 ["Sun", false, "—", "Chicken Curry (lunch) + Air Fryer Chicken (dinner)"],
               ].map(([day, isVeg, bfast, din]) => (
@@ -1215,7 +1215,7 @@ export default function App() {
                     {prepDay === "Mon" && "📅 Tomorrow is Tuesday — heaviest pull day (deadlifts). Sleep early if possible."}
                     {prepDay === "Tue" && "📅 Tomorrow is Wednesday — leg day. Save the cold rice from tonight's dinner."}
                     {prepDay === "Wed" && "📅 Tomorrow is Thursday — mandatory swim + gym. Your biggest prep day. Pack the bag tonight."}
-                    {prepDay === "Thu" && "📅 Tomorrow is Friday — gym Pull. Easier day. Blend the oats tonight for Friday's pancake."}
+                    {prepDay === "Thu" && "📅 Tomorrow is Friday — gym Pull. Easier day. Keep 8 eggs ready if you're making the full omelette dinner."}
                     {prepDay === "Fri" && "📅 Tomorrow is Saturday — cycling + possible swim, all-veg day. Early start, everything must be ready."}
                     {prepDay === "Sat" && "📅 Tomorrow is Sunday — rest, shopping, and cooking day. Marinate chicken tonight for incredible flavour."}
                   </div>
